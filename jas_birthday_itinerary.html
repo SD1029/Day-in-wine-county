@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jas's 26th Birthday Weekend</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #fdf8f3; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding: 24px 16px 48px; }
+  .iti-root { max-width: 680px; margin: 0 auto; }
+
+  .iti-hero { background: #f5ede4; border-radius: 12px; padding: 2rem 1.5rem 1.5rem; text-align: center; margin-bottom: 1.5rem; border: 0.5px solid #d9c4b0; position: relative; overflow: hidden; }
+  .iti-hero::before { content: ''; position: absolute; inset: 6px; border: 0.5px solid #c9ad95; border-radius: 10px; pointer-events: none; }
+  .iti-grape { font-size: 28px; display: block; margin-bottom: 8px; }
+  .iti-eyebrow { font-size: 11px; letter-spacing: 0.18em; color: #7a4f35; text-transform: uppercase; margin-bottom: 6px; font-weight: 500; }
+  .iti-title { font-family: 'Playfair Display', serif; font-size: 28px; color: #5c2d14; font-weight: 400; line-height: 1.2; }
+  .iti-title em { font-style: italic; }
+  .iti-subtitle { font-family: 'Playfair Display', serif; font-size: 13px; letter-spacing: 0.14em; color: #8b5e3c; text-transform: uppercase; margin-top: 10px; }
+  .iti-sig { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 20px; color: #7a4f35; margin-top: 10px; display: block; }
+
+  .legend { display: flex; gap: 16px; padding: 0.75rem 0 0.5rem; flex-wrap: wrap; }
+  .legend-item { display: flex; align-items: center; gap: 5px; font-size: 11.5px; color: #888; }
+
+  .day-block { background: #fff; border: 0.5px solid #e5ddd5; border-radius: 12px; margin-bottom: 1rem; overflow: hidden; }
+  .day-header { background: #f5ede4; padding: 10px 16px; display: flex; align-items: center; gap: 10px; border-bottom: 0.5px solid #d9c4b0; }
+  .day-label { font-size: 11px; letter-spacing: 0.12em; color: #7a4f35; text-transform: uppercase; font-weight: 500; }
+  .day-date { font-family: 'Playfair Display', serif; font-size: 16px; color: #5c2d14; font-weight: 500; }
+  .day-badge { margin-left: auto; background: #7a4f35; color: #f5ede4; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; font-weight: 500; white-space: nowrap; }
+
+  .star-section { background: #fdf6ee; border-top: 0.5px solid #d9c4b0; border-bottom: 0.5px solid #d9c4b0; padding: 10px 16px; }
+  .star-label { font-size: 11px; color: #7a4f35; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; display: block; margin-bottom: 8px; }
+  .highlight-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+  .hpill { background: #f5ede4; border: 0.5px solid #c9ad95; border-radius: 20px; padding: 4px 11px; font-size: 12px; color: #5c2d14; }
+  .hpill-star { background: #7a4f35; border-color: #7a4f35; color: #f5ede4; }
+
+  .events { padding: 8px 0; }
+  .event { display: flex; }
+  .event-time-col { width: 90px; min-width: 90px; padding: 8px 10px 8px 16px; }
+  .event-time { font-size: 11px; color: #aaa; font-weight: 500; white-space: nowrap; padding-top: 2px; }
+  .event-body { flex: 1; padding: 8px 16px 8px 0; border-left: 0.5px solid #ede8e2; }
+  .event-label { font-size: 13.5px; color: #2c2c2a; line-height: 1.45; }
+  .event-note { font-size: 11.5px; color: #888; margin-top: 2px; font-style: italic; }
+  .event-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; margin-right: 6px; vertical-align: 2px; }
+  .dot-travel { background: #b0956e; }
+  .dot-food { background: #8b5e3c; }
+  .dot-wine { background: #5c2d14; }
+  .dot-milestone { background: #c4956a; }
+  .dot-stay { background: #cbb89a; }
+  .section-div { height: 0.5px; background: #ede8e2; margin: 4px 16px; }
+</style>
+</head>
+<body>
+<div class="iti-root">
+
+  <div class="iti-hero">
+    <span class="iti-grape">🍇</span>
+    <div class="iti-eyebrow">You are invited to celebrate</div>
+    <div class="iti-title"><em>A Day in</em><br>Wine County</div>
+    <div class="iti-subtitle">June 19 – 22 · Bay Area</div>
+    <span class="iti-sig">Love, Jas ♡</span>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><span class="event-dot dot-travel"></span>Travel</div>
+    <div class="legend-item"><span class="event-dot dot-wine"></span>Wine</div>
+    <div class="legend-item"><span class="event-dot dot-food"></span>Food & drinks</div>
+    <div class="legend-item"><span class="event-dot dot-milestone"></span>Milestone</div>
+    <div class="legend-item"><span class="event-dot dot-stay"></span>Stay</div>
+  </div>
+
+  <!-- FRIDAY -->
+  <div class="day-block">
+    <div class="day-header">
+      <div><div class="day-label">Day 1</div><div class="day-date">Friday, June 19</div></div>
+      <div class="day-badge">Arrival</div>
+    </div>
+    <div class="star-section">
+      <span class="star-label">Highlights</span>
+      <div class="highlight-pills">
+        <span class="hpill">Din Tai Fung dinner</span>
+        <span class="hpill">Wild Rose drinks</span>
+        <span class="hpill">Stroll Santana Row</span>
+      </div>
+    </div>
+    <div class="events">
+      <div class="event"><div class="event-time-col"><div class="event-time">9:30 AM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>Sabrina lands SFO</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">10:30 AM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>Sabrina exits SFO</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">11:45 AM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-stay"></span>Arrive 1277 Babb Ct, Unit 312</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">12:00 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-food"></span>Appetizers & drinks</div><div class="event-note">Until 12:30 PM</div></div></div>
+      <div class="section-div"></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">12:30 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>Helen, Fatima & Amanda land SFO</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">1:30 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>Helen, Fatima & Amanda exit SFO</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">1:45 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-stay"></span>Everyone arrives 1277 Babb Ct</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">2:00 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-food"></span>Appetizers & drinks</div><div class="event-note">Until 3:00 PM</div></div></div>
+      <div class="section-div"></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">3:30 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-stay"></span>Get ready for dinner</div><div class="event-note">Until 5:50 PM</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">6:00 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>Uber to Santana Row</div><div class="event-note">Est. arrival 6:20–6:30 PM</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">6:30 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-milestone"></span>Stroll Santana Row</div><div class="event-note">Until 7:00 PM</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">7:00 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-food"></span>Dinner · Din Tai Fung</div><div class="event-note">Backup: Joey Reso at Santana Row 9 PM · Maggiano's Italian</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">10:00 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-food"></span>Drinks · Wild Rose, Downtown Campbell</div></div></div>
+    </div>
+  </div>
+
+  <!-- SATURDAY -->
+  <div class="day-block">
+    <div class="day-header">
+      <div><div class="day-label">Day 2</div><div class="day-date">Saturday, June 20</div></div>
+      <div class="day-badge">🎂 Birthday</div>
+    </div>
+    <div class="star-section">
+      <span class="star-label">Highlights</span>
+      <div class="highlight-pills">
+        <span class="hpill">Wine tasting · Carneros</span>
+        <span class="hpill">Artesa Winery</span>
+        <span class="hpill hpill-star">✦ Teleferic patio dinner</span>
+        <span class="hpill">Fireplace night cap</span>
+      </div>
+    </div>
+    <div class="events">
+      <div class="event"><div class="event-time-col"><div class="event-time">9:00 AM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-food"></span>Breakfast</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">10:15 AM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-stay"></span>Get ready</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">12:00 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>Uber to Domaines Winery</div></div></div>
+      <div class="section-div"></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">1:30 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-wine"></span>Arrive Domaines Carneros Winery</div><div class="event-note">Until 2:00 PM</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">2:00 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-wine"></span>Wine tasting & charcuterie</div><div class="event-note">Until 3:20 PM</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">3:20 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>Uber to Artesa Winery</div></div></div>
+      <div class="section-div"></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">4:00 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-wine"></span>Arrive Artesa Winery</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">4:15 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-wine"></span>Wine tasting</div><div class="event-note">Until 5:15 PM</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">5:30 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>Uber to Teleferic, Los Gatos</div></div></div>
+      <div class="section-div"></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">7:00 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-milestone"></span>Arrive Teleferic · vibey patio dinner</div><div class="event-note">Los Gatos · stunning outdoor terrace</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">8:45 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>Uber to 1277 Babb Ct</div><div class="event-note">Est. arrival 9:15–9:30 PM</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">9:30 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-stay"></span>Change into cozy loungewear</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">9:45 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-stay"></span>Night cap at fireplace downstairs</div></div></div>
+    </div>
+  </div>
+
+  <!-- SUNDAY -->
+  <div class="day-block">
+    <div class="day-header">
+      <div><div class="day-label">Day 3</div><div class="day-date">Sunday, June 21</div></div>
+      <div class="day-badge">SF Day</div>
+    </div>
+    <div class="star-section">
+      <span class="star-label">Highlights</span>
+      <div class="highlight-pills">
+        <span class="hpill">Golden Gate Bridge</span>
+        <span class="hpill">Malibu Farms lunch</span>
+        <span class="hpill">Bar Bocce Sausalito</span>
+        <span class="hpill">Palace of Fine Arts</span>
+        <span class="hpill">Equal Parts SF</span>
+      </div>
+    </div>
+    <div class="events">
+      <div class="event"><div class="event-time-col"><div class="event-time">9:00 AM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-food"></span>Breakfast</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">9:15 AM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-stay"></span>Get ready</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">10:15 AM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>SUV rental pick-up · Enterprise (Pearle Ave)</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">11:00 AM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>Begin driving to SF</div></div></div>
+      <div class="section-div"></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">12:30 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-milestone"></span>Milestone 1 · Golden Gate Bridge</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">1:00 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-milestone"></span>Milestone 2 · Hawk Hill Viewpoint</div><div class="event-note">Until 1:30 PM</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">1:30 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>Head to Malibu Farms Tiburon</div><div class="event-note">Until 2:30 PM · Find parking 2:30–2:45</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">3:00 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-food"></span>Milestone 3 · Late lunch at Malibu Farms</div><div class="event-note">Until 4:30 PM</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">5:00 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-food"></span>Milestone 4 · Drinks at Bar Bocce by the water</div><div class="event-note">Sausalito</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">6:15 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-milestone"></span>Milestone 5 · Palace of Fine Arts & Marina</div><div class="event-note">Until 7:00 PM</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">7:00 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-food"></span>Milestone 6 · Drinks at Equal Parts SF</div><div class="event-note">Until 8:45 PM</div></div></div>
+      <div class="section-div"></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">9:00 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>Drive back to 1277 Babb Ct</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">~9:45 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-food"></span>Dinner · In-N-Out, grab on the way</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">10:00 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-stay"></span>Change into cozy loungewear</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">10:30 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-stay"></span>Night cap at fireplace downstairs</div></div></div>
+    </div>
+  </div>
+
+  <!-- MONDAY -->
+  <div class="day-block">
+    <div class="day-header">
+      <div><div class="day-label">Day 4</div><div class="day-date">Monday, June 22</div></div>
+      <div class="day-badge">Farewell</div>
+    </div>
+    <div class="star-section">
+      <span class="star-label">Highlights</span>
+      <div class="highlight-pills">
+        <span class="hpill">Breakfast at Bloom</span>
+        <span class="hpill">Willow Glen Rooftop</span>
+        <span class="hpill">Sushi Confidential</span>
+      </div>
+    </div>
+    <div class="events">
+      <div class="event"><div class="event-time-col"><div class="event-time">8:00 AM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-stay"></span>Get ready</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">9:30 AM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-food"></span>Breakfast at Bloom</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">11:00 AM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>Helen, Fatima & Amanda call Uber to SFO</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">12:00 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>Arrive SFO</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">1:20 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>Flight departs</div></div></div>
+      <div class="section-div"></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">Afternoon</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-food"></span>Drinks · Willow Glen Rooftop (Copita Tequileria)</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">5:00 PM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-food"></span>Dinner · Sushi Confidential</div><div class="event-note">Happy hour until 6 PM</div></div></div>
+      <div class="section-div"></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">2:45 AM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>Sabrina calls Uber to SFO</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">3:45 AM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>Sabrina arrives SFO</div></div></div>
+      <div class="event"><div class="event-time-col"><div class="event-time">5:00 AM</div></div><div class="event-body"><div class="event-label"><span class="event-dot dot-travel"></span>Sabrina's flight departs</div></div></div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
